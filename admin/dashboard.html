@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard | Aegirum Consulting</title>
+    <meta name="description" content="Aegirum Consulting Admin Dashboard" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../styles.css" />
+    <meta name="theme-color" content="#0A192F" />
+  </head>
+
+  <body class="admin-body">
+    <div class="admin-shell">
+      <aside class="admin-sidebar" aria-label="Admin navigation">
+        <div class="admin-sidebar__brand">
+          <img class="admin-sidebar__logo" src="../image/1.png" alt="Aegirum Consulting" />
+          <div class="admin-sidebar__name">Admin</div>
+        </div>
+
+        <nav class="admin-nav">
+          <a class="admin-nav__link is-active" href="dashboard.html">Articles</a>
+          <a class="admin-nav__link" href="../blog/index.html" target="_blank" rel="noopener noreferrer">View Blog</a>
+          <button class="admin-nav__link admin-nav__link--btn" type="button" id="adminLogout">Logout</button>
+        </nav>
+      </aside>
+
+      <main class="admin-main" aria-label="Dashboard">
+        <header class="admin-topbar">
+          <h1 class="admin-h1">Articles</h1>
+          <div class="admin-actions">
+            <a class="btn btn--primary js-magnetic" href="editor.html">New Post</a>
+          </div>
+        </header>
+
+        <section class="admin-card admin-card--wide" aria-label="Articles table">
+          <div class="admin-table" id="adminTable"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="admin.js"></script>
+  </body>
+</html>

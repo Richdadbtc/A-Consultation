@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Login | Aegirum Consulting</title>
+    <meta name="description" content="Aegirum Consulting Admin Login" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../styles.css" />
+    <meta name="theme-color" content="#0A192F" />
+  </head>
+
+  <body class="admin-body">
+    <main class="admin-login" aria-label="Admin login">
+      <div class="admin-card">
+        <img class="admin-logo" src="../image/1.png" alt="Aegirum Consulting" />
+        <h1 class="admin-title">Admin Login</h1>
+        <p class="admin-subtitle">Secure access to manage News & Insights.</p>
+
+        <form id="adminLoginForm" novalidate>
+          <label class="field">
+            <span class="field__label">Username</span>
+            <input class="field__input" type="text" name="username" autocomplete="username" required />
+            <span class="field__error" data-error-for="username"></span>
+          </label>
+
+          <label class="field">
+            <span class="field__label">Password</span>
+            <input class="field__input" type="password" name="password" autocomplete="current-password" required />
+            <span class="field__error" data-error-for="password"></span>
+          </label>
+
+          <div class="form__actions" style="margin-top: 8px;">
+            <button class="btn btn--primary" type="submit">Sign in</button>
+            <p class="form__note" id="adminLoginNote" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <script src="admin.js"></script>
+  </body>
+</html>

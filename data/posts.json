@@ -1,0 +1,26 @@
+[
+  {
+    "id": "risk-iso-31000-frameworks",
+    "title": "ISO 31000 in Practice: Building a Risk Framework That Executives Use",
+    "featuredImage": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1800&q=80",
+    "category": "Risk",
+    "date": "2026-04-01",
+    "body": "<p>ISO 31000 is most effective when it is implemented as a decision system—not just a compliance exercise.</p><h3>What we look for</h3><ul><li>Clear risk ownership</li><li>Actionable KRIs</li><li>Board-level reporting cadence</li></ul><p>We design risk frameworks that integrate into budgeting, strategy, and performance management.</p>"
+  },
+  {
+    "id": "tax-audit-readiness",
+    "title": "Tax Audit Readiness: Documentation That Reduces Dispute Risk",
+    "featuredImage": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1800&q=80",
+    "category": "Tax",
+    "date": "2026-03-18",
+    "body": "<p>Audit readiness is built long before an audit begins.</p><h3>Practical checklist</h3><ul><li>Transaction rationale</li><li>Transfer pricing support</li><li>Consistency across filings</li></ul><p>Our advisory approach balances compliance with strategic flexibility.</p>"
+  },
+  {
+    "id": "governance-controls",
+    "title": "Corporate Governance Controls: Turning Policy Into Predictable Outcomes",
+    "featuredImage": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1800&q=80",
+    "category": "Governance",
+    "date": "2026-02-27",
+    "body": "<p>Policies don’t create assurance—operational controls do.</p><p>We help leadership teams define control objectives, responsibilities, and monitoring that scales with growth.</p>"
+  }
+]

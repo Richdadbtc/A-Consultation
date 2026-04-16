@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editor | Aegirum Consulting</title>
+    <meta name="description" content="Aegirum Consulting Admin Editor" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://cdn.quilljs.com/1.3.7/quill.snow.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+
+    <meta name="theme-color" content="#0A192F" />
+  </head>
+
+  <body class="admin-body">
+    <div class="admin-shell">
+      <aside class="admin-sidebar" aria-label="Admin navigation">
+        <div class="admin-sidebar__brand">
+          <img class="admin-sidebar__logo" src="../image/1.png" alt="Aegirum Consulting" />
+          <div class="admin-sidebar__name">Admin</div>
+        </div>
+
+        <nav class="admin-nav">
+          <a class="admin-nav__link" href="dashboard.html">Articles</a>
+          <a class="admin-nav__link" href="../blog/index.html" target="_blank" rel="noopener noreferrer">View Blog</a>
+          <button class="admin-nav__link admin-nav__link--btn" type="button" id="adminLogout">Logout</button>
+        </nav>
+      </aside>
+
+      <main class="admin-main" aria-label="Editor">
+        <header class="admin-topbar">
+          <div>
+            <h1 class="admin-h1" id="editorTitle">New Post</h1>
+            <p class="admin-muted">Publish instantly to the local blog store.</p>
+          </div>
+          <div class="admin-actions">
+            <a class="btn btn--ghost" href="dashboard.html">Back</a>
+            <button class="btn btn--primary js-magnetic" type="button" id="publishBtn">Publish</button>
+          </div>
+        </header>
+
+        <section class="admin-grid">
+          <div class="admin-card">
+            <div class="admin-field">
+              <label class="field">
+                <span class="field__label">Title</span>
+                <input class="field__input" type="text" id="postTitle" required />
+                <span class="field__error" data-error-for="postTitle"></span>
+              </label>
+            </div>
+
+            <div class="admin-field">
+              <label class="field">
+                <span class="field__label">Category</span>
+                <select class="field__input" id="postCategory" required>
+                  <option value="" selected>Select a category</option>
+                  <option value="Risk">Risk</option>
+                  <option value="Tax">Tax</option>
+                  <option value="ISO">ISO</option>
+                  <option value="Governance">Governance</option>
+                </select>
+                <span class="field__error" data-error-for="postCategory"></span>
+              </label>
+            </div>
+
+            <div class="admin-field">
+              <label class="field">
+                <span class="field__label">Date</span>
+                <input class="field__input" type="date" id="postDate" required />
+                <span class="field__error" data-error-for="postDate"></span>
+              </label>
+            </div>
+
+            <div class="admin-field">
+              <label class="field">
+                <span class="field__label">Featured Image URL</span>
+                <input class="field__input" type="url" id="postImage" placeholder="https://..." required />
+                <span class="field__error" data-error-for="postImage"></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="admin-card admin-card--wide">
+            <div class="admin-editor" id="quillEditor" aria-label="Rich text editor"></div>
+            <p class="admin-note" id="editorNote" role="status" aria-live="polite"></p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://cdn.quilljs.com/1.3.7/quill.min.js"></script>
+    <script src="admin.js"></script>
+  </body>
+</html>
