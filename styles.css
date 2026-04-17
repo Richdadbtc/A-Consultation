@@ -1262,14 +1262,24 @@ body.admin-body .btn--primary {
 .footer__bottom-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 16px;
+}
+
+.footer__partner-box {
+  margin-top: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.04);
 }
 
 .footer__partner {
   display: inline-flex;
   align-items: center;
-  justify-content: flex-end;
   gap: 10px;
   color: rgba(255, 255, 255, 0.70);
   font-size: 12px;
@@ -1278,7 +1288,7 @@ body.admin-body .btn--primary {
 }
 
 .footer__partner img {
-  height: 28px;
+  height: 26px;
   width: auto;
   display: block;
   opacity: 0.95;
@@ -1293,10 +1303,6 @@ body.admin-body .btn--primary {
   .footer__bottom-inner {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  .footer__partner {
-    justify-content: flex-start;
   }
 
   .hero {
