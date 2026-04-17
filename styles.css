@@ -1289,8 +1289,11 @@ body.admin-body .btn--primary {
 
 .footer__partner img {
   height: 26px;
+  max-height: 26px;
   width: auto;
+  max-width: 120px;
   display: block;
+  flex: 0 0 auto;
   opacity: 0.95;
   filter: saturate(0.9) contrast(1.02);
 }
