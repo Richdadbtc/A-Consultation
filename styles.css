@@ -252,6 +252,14 @@ a:hover {
   overflow: hidden;
 }
 
+.hero--simple {
+  padding: 92px 0 46px;
+}
+
+.hero--simple .hero__panel {
+  display: none;
+}
+
 .hero__bg {
   position: absolute;
   inset: 0;
