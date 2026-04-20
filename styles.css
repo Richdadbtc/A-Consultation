@@ -427,6 +427,37 @@ a:hover {
   font-size: 13px;
 }
 
+.trust__logo {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 999px;
+  padding: 10px 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+  text-align: center;
+  min-width: 220px;
+}
+
+.trust__logo img {
+  height: 40px;
+  max-height: 40px;
+  width: auto;
+  max-width: 220px;
+  display: block;
+  opacity: 0.95;
+}
+
+.trust__name {
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.70);
+  white-space: nowrap;
+}
+
 .marquee {
   overflow: hidden;
   mask-image: linear-gradient(90deg, transparent, black 10%, black 90%, transparent);
@@ -1097,7 +1128,7 @@ body.admin-body .btn--primary {
 
 .contact__v {
   margin-top: 4px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .contact__v a {
