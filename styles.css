@@ -1327,10 +1327,10 @@ body.admin-body .btn--primary {
 }
 
 .footer__partner img {
-  height: 52px;
-  max-height: 52px;
+  height: 68px;
+  max-height: 68px;
   width: auto;
-  max-width: 240px;
+  max-width: 320px;
   display: block;
   flex: 0 0 auto;
   opacity: 0.95;
