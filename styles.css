@@ -1176,6 +1176,25 @@ body.admin-body .btn--primary {
   line-height: 1.3;
 }
 
+.card__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.card__actions .btn {
+  white-space: nowrap;
+}
+
+@media (max-width: 520px) {
+  .card__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
 .card__text {
   margin: 0 0 12px;
   color: rgba(255, 255, 255, 0.76);
